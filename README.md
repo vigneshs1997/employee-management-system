@@ -26,3 +26,4 @@ paymentRepo.pay(user);        // Step 2: Payment (may fail)
 
 ## ERROR:
 ResourceNotFoundException: Employee is not exist with given id: 2
+Wrong Method : 405 (Method Not Allowed)
