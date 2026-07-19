@@ -7,13 +7,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/employees")
 @AllArgsConstructor
 public class EmployeeController {
 
     private EmployeeService employeeService;
+
 
     @PostMapping("/save")
     public ResponseEntity<EmployeeDto> createEmployee(@RequestBody EmployeeDto employeeDto){//JSON Object from http request -> EmployeeDto
